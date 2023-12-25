@@ -1,0 +1,43 @@
+{
+    "example": "Wide Memory Read/Write",
+    "overview": [
+        "This is a simple example of vector addition to demonstrate Wide Memory Access using structure data type of 128bit wide. Based on input argument type, sds++ compiler will figure out the memory interface datawidth of hardware accelerator." 
+    ],
+    "key_concepts": [ "wide memory access", "burst read and write", "custom datatype"],
+    "keywords": ["struct"],
+    "nboard": ["zc702", "microzed", "zed", "zybo"],
+    "contributors" : [
+        {
+            "group": "Xilinx",
+            "url" : "http://www.xilinx.com"
+        }
+    ],
+    "revision" : [
+        {
+            "date" : "JUNE2017",
+            "version": "1.0",
+            "description": "Initial Xilinx Release"
+        }
+    ],
+    "compiler" : {
+        "options" : "-Wno-unused-label"
+    },
+    "accelerators": [
+       {
+           "name" : "vadd_accel",
+           "location" : "vadd.cpp"
+       }
+    ],
+    "libs": [
+            "sds_utils"
+    ],
+    "os" : [
+            "linux"
+    ],
+    "runtime" : [
+            "C/C++"
+    ],
+    "source_dir" : "src/*.cpp",
+    "pass_string" : "TEST PASSED",
+    "fail_string" : "TEST FAILED" 
+}

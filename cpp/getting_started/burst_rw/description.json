@@ -1,0 +1,42 @@
+{
+    "example": "Burst Read/Write",
+    "overview": [
+        "This is a simple vector increment example which demonstrates usage of  AXI4-master interface for burst read and write"
+    ],
+    "key_concepts": [ "Burst Access"],
+    "contributors" : [
+        {
+            "group": "Xilinx",
+            "url" : "http://www.xilinx.com"
+        }
+    ],
+    "revision" : [
+        {
+            "date" : "JUNE2017",
+            "version": "1.0",
+            "description": "Initial Xilinx Release"
+        }
+    ],
+    "compiler" : {
+        "options" : "-Wno-unused-label"
+    },
+    "accelerators": [
+       {
+           "name" : "vec_incr_accel",
+           "location" : "vec_incr.cpp"
+       }
+    ],
+    "libs": [
+            "sds_utils"
+    ],
+    "os" : [
+            "linux",
+            "standalone"
+    ],
+    "runtime" : [
+            "C/C++"
+    ],
+    "source_dir" : "src/*.cpp",
+    "pass_string" : "TEST PASSED",
+    "fail_string" : "TEST FAILED" 
+}

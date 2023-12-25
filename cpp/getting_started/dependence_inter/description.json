@@ -1,0 +1,43 @@
+{
+    "example": "Loop Iteration Dependency",
+    "overview": [
+        "This is a simple example to demonstrate inter dependence attribute using vertical convolution example. Using inter dependence attribute user can provide additional dependency details to compiler which allow compiler to perform unrolling/pipelining to get better performance "
+    ],
+    "key_concepts": [ "Inter Dependence"],
+    "keywords": ["DEPENDENCE", "inter"],
+    "contributors" : [
+        {
+            "group": "Xilinx",
+            "url" : "http://www.xilinx.com"
+        }
+    ],
+    "revision" : [
+        {
+            "date" : "JUNE2017",
+            "version": "1.0",
+            "description": "Initial Xilinx Release"
+        }
+    ],
+    "compiler" : {
+        "options" : "-Wno-unused-label"
+    },
+    "accelerators": [
+       {
+           "name" : "vconv_hw",
+           "location" : "vconv.cpp"
+       }
+    ],
+    "libs": [
+            "sds_utils"
+    ],
+    "os" : [
+            "linux",
+            "standalone"
+    ],
+    "runtime" : [
+            "C/C++"
+    ],
+    "source_dir" : "src/*.cpp",
+    "pass_string" : "TEST PASSED",
+    "fail_string" : "TEST FAILED" 
+}

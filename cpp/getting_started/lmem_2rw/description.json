@@ -1,0 +1,43 @@
+{
+    "example": "Two Parallel Read/Write on Local Memory",
+    "overview": [
+        "This is a simple example of vector addition to demonstrate how to utilize both ports of Local Memory "
+    ],
+    "key_concepts": [ "Hardware Function Optimization", "2port BRAM Utilization", "Two read/write Local Memory"],
+    "keywords": ["#pragma HLS UNROLL FACTOR=2"],
+    "contributors" : [
+        {
+            "group": "Xilinx",
+            "url" : "http://www.xilinx.com"
+        }
+    ],
+    "revision" : [
+        {
+            "date" : "JUNE2017",
+            "version": "1.0",
+            "description": "Initial Xilinx Release"
+        }
+    ],
+    "compiler" : {
+        "options" : "-Wno-unused-label"
+    },
+    "accelerators": [
+       {
+           "name" : "vadd_accel",
+           "location" : "vadd.cpp"
+       }
+    ],
+    "libs": [
+            "sds_utils"
+    ],
+    "os" : [
+            "linux",
+            "standalone"
+    ],
+    "runtime" : [
+            "C/C++"
+    ],
+    "source_dir" : "src/*.cpp",
+    "pass_string" : "TEST PASSED",
+    "fail_string" : "TEST FAILED" 
+}

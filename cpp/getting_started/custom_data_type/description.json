@@ -1,0 +1,44 @@
+{
+    "example": "Custom Data Type",
+    "overview": [
+        "This is a simple example of RGB to HSV conversion to demonstrate Custom Data Type usage in hardware accelerator. Xilinx HLS compiler supports custom data type to operate within the hardware function and also it acts as a memory interface between PL to DDR"
+    ],
+    "key_concepts": [ "Custom Data type"],
+    "keywords": ["struct", "packed", "aligned"],
+    "contributors" : [
+        {
+            "group": "Xilinx",
+            "url" : "http://www.xilinx.com"
+        }
+    ],
+    "revision" : [
+        {
+            "date" : "JUNE2017",
+            "version": "1.0",
+            "description": "Initial Xilinx Release"
+        }
+    ],
+    "compiler" : {
+        "options" : "-Wno-unused-label"
+    },
+    "accelerators": [
+       {
+           "name" : "rgb_to_hsv_accel",
+           "location" : "rgb_to_hsv.cpp"
+       }
+    ],
+    "libs": [
+            "sds_utils"
+    ],
+    "targets": ["hw"],
+    "os" : [
+            "linux",
+            "standalone"
+    ],
+    "runtime" : [
+            "C/C++"
+    ],
+    "source_dir" : "src/*.cpp",
+    "pass_string" : "TEST PASSED",
+    "fail_string" : "TEST FAILED" 
+}

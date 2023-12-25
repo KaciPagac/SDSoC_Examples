@@ -1,0 +1,51 @@
+{
+    "example": "Multi Threading",
+    "overview": [
+        "Simple Multi-Threading application demonstrating performance comparision between software and hardware - with and without threads"
+     ],
+    "key_concepts": [ "multi threading"],
+    "keywords": ["#pragma HLS array_partition", "#pragma HLS PIPELINE", "#pragma SDS data access_pattern"],
+    "contributors" : [
+           {
+             "group" : "Xilinx, Inc.",
+             "url" : "http://www.xilinx.com/"
+          }
+    ],
+ "revision" : [
+        {
+            "date" : "MARCH2018",
+            "version": "1.0",
+            "desc": "Initial Xilinx Release"
+        }
+    ],
+ "compiler" : {
+        "options" : "-Wno-unused-label"
+    },
+ "board": [
+        "zcu102",
+        "zc706"
+    ],
+ "nboard": [
+        "zc702",
+        "zed"
+    ],
+    
+    "os": [
+        "Linux"
+    ],
+    "accelerators": [
+        {
+            "name": "mmult_accel",
+            "location": "mmult_accel.cpp"
+        }
+    ],
+    "libs": [
+            "sds_utils"
+    ],
+       "runtime" : [
+                 "C/C++"
+    ],
+    "source_dir" : "src/*.cpp", 
+    "pass_string" : "TEST PASSED",
+    "fail_string" : "TEST FAILED"
+}

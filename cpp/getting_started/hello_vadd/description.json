@@ -1,0 +1,43 @@
+{
+    "example": "Hello Vector Addition",
+    "overview": [
+        "This is a basic hello world kind of example which demonstrates how to achieve vector addition using hardware function."
+    ],
+    "key_concepts": ["Loop Pipelining"],
+    "keywords": ["#pragma HLS PIPELINE"],
+    "contributors" : [
+        {
+            "group": "Xilinx",
+            "url" : "http://www.xilinx.com"
+        }
+    ],
+    "revision" : [
+        {
+            "date" : "JUNE2017",
+            "version": "1.0",
+            "description": "Initial Xilinx Release"
+        }
+    ],
+    "compiler" : {
+        "options" : "-Wno-unused-label"
+    },
+    "accelerators": [
+       {
+           "name" : "vadd_accel",
+           "location" : "vector_addition.cpp"
+       }
+    ],
+    "libs": [
+            "sds_utils"
+    ],
+    "os" : [
+            "linux",
+            "standalone"
+    ],
+    "runtime" : [
+            "C/C++"
+    ],
+    "source_dir" : "src/*.cpp",
+    "pass_string" : "TEST PASSED",
+    "fail_string" : "TEST FAILED" 
+}

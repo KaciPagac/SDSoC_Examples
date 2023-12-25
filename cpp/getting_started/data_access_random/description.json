@@ -1,0 +1,45 @@
+{
+    "example": "Random Data Access Pattern",
+    "overview": [
+        "This is a simple example of matrix multiplication (Row x Col) to demonstrate random data access pattern."
+    ],
+    "key_concepts": [ "Data Access Random"],
+    "keywords": ["#pragma HLS PIPELINE", 
+                 "#pragma sds data access_pattern(a:RANDOM, b:RANDOM)",
+                 "#pragma sds data copy"],
+    "contributors" : [
+        {
+            "group": "Xilinx",
+            "url" : "http://www.xilinx.com"
+        }
+    ],
+    "revision" : [
+        {
+            "date" : "JUL2017",
+            "version": "1.0",
+            "description": "Initial Xilinx Release"
+        }
+    ],
+    "compiler" : {
+        "options" : "-Wno-unused-label"
+    },
+    "accelerators": [
+       {
+           "name" : "mmult_accel",
+           "location" : "mmult.cpp"
+       }
+    ],
+    "libs": [
+            "sds_utils"
+    ],
+    "os" : [
+            "linux",
+            "standalone"
+    ],
+    "runtime" : [
+            "C/C++"
+    ],
+    "source_dir" : "src/*.cpp",
+    "pass_string" : "TEST PASSED",
+    "fail_string" : "TEST FAILED" 
+}
